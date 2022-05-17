@@ -11,8 +11,8 @@ import os
 
 clock = pygame.time.Clock()
 pygame.init()
-# WIDTH, HEIGHT = 1280, 740
-WIDTH, HEIGHT = 500, 500
+WIDTH, HEIGHT = 1280, 740
+# WIDTH, HEIGHT = 500, 500
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Sorting Algorithm")
 pygame.display.update()
