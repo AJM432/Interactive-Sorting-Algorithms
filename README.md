@@ -18,11 +18,22 @@
 5. Press ESC to return to the main menu.
 6. Change program parameters in the settings menu accessible by the main menu.
 
-# Screenshots:
+## Demo:
+<div align="center">
+<img src="https://user-images.githubusercontent.com/49791407/165393737-55bfd6d3-2e3f-42f4-ab99-7a68a6fee351.gif">
+</div>
+<br>
 
-![github_optimized_sort_demo](https://user-images.githubusercontent.com/49791407/165393737-55bfd6d3-2e3f-42f4-ab99-7a68a6fee351.gif)
+## UI Menus
+<div align="center">
+<h3>Main Menu<h3>
 
+<img src="https://user-images.githubusercontent.com/49791407/158735030-a4c4c570-18d2-47c5-b78d-ad281ed3c98a.png">
 
-![main_menu](https://user-images.githubusercontent.com/49791407/158735030-a4c4c570-18d2-47c5-b78d-ad281ed3c98a.png)
-![settings](https://user-images.githubusercontent.com/49791407/158735037-f9f09024-104e-4987-a505-0f395df3e181.png)
-![selection_sort](https://user-images.githubusercontent.com/49791407/158735042-7ba215e2-bcb7-46aa-a228-2ee7139f1b65.png)
+<h3>Settings Menu<h3>
+<img src="https://user-images.githubusercontent.com/49791407/158735037-f9f09024-104e-4987-a505-0f395df3e181.png">
+
+<h3>Algorithm Run Menu<h3>
+<img src="https://user-images.githubusercontent.com/49791407/158735042-7ba215e2-bcb7-46aa-a228-2ee7139f1b65.png">
+
+</div>
