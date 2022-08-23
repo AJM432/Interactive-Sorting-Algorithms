@@ -1,8 +1,22 @@
-# Interactive-Sorting-Algorithms
-Displays various sorting algorithms with step by step iteration.
+<div align="center">
+<img src="https://user-images.githubusercontent.com/49791407/186274074-e914364c-2f00-4714-b848-07bc9059eeb9.png">
 
-- Enter ESC to go to the main menu.
-- Enter SPACE to pause iteration.
+<b>Displays various sorting algorithms with step by step iteration.</b>
+ </div>
+
+<br>
+
+![](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=blue&color=white) 
+![](https://img.shields.io/tokei/lines/github/AJM432/Interactive-Sorting-Algorithms) 
+![](https://img.shields.io/github/repo-size/AJM432/Interactive-Sorting-Algorithms?style=flat)
+
+## Installation & Usage
+1. Clone the repository and install the dependencies in ![requirements.txt](https://github.com/AJM432/Interactive-Sorting-Algorithms/blob/main/requirements.txt).
+2. Run `python3 sort.py` in the working directory of the cloned repository.
+3. Click one of four buttons to run the associated sorting algorithm.
+4. Press the SPACE key to pause iteration at any time.
+5. Press ESC to return to the main menu.
+6. Change program parameters in the settings menu accessible by the main menu.
 
 # Screenshots:
 
