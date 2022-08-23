@@ -1,47 +1,27 @@
-# TODO: add more algorithms: merge sort, quick sort, Insertion Sort, Bubble Sort, Heapsort, Counting Sort
-
-
 import pygame
 import pygame_menu
 import random
-import time
 from numba import jit
 import os
+from constants import *
 
 
 clock = pygame.time.Clock()
 pygame.init()
-WIDTH, HEIGHT = 1280, 740
-# WIDTH, HEIGHT = 500, 500
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Sorting Algorithm")
 pygame.display.update()
 
-BLACK = (0, 0, 0)
-GREY = (125, 125, 125)
-WHITE = (255, 255, 255)
-RED = (255, 0, 0)
-GREEN = (0, 255, 0)
-BLUE = (0, 0, 255)
-HACKER_GREEN = (20, 148, 20)
-BACKGROUND_COLOR = BLACK
-BAR_COLOR = HACKER_GREEN
-TOP_BAR_OFFSET = 0 # sets the space between the highest bar and the top of the screen
-
 ARRAY_GENERATION_MODE = 'random'
 
+# UI
+TOP_BAR_OFFSET = 0 # sets the space between the highest bar and the top of the screen
 RAND_ARRAY_SIZE = 100
 RAND_ARRAY_MIN = 0
 RAND_ARRAY_MAX = 100
 BAR_THICKNESS = 1
 
-FPS = 100
-DELAY = 0
-SORT_END_DELAY = 2000 # when program ends sorting
-
-# assets
-NUM_IMAGES = 5
-
+# load images
 settings_image = pygame.image.load(os.path.join("Assets", "Settings.jpg")).convert()
 settings_image = pygame.transform.scale(settings_image, (WIDTH, int(HEIGHT/NUM_IMAGES)))
 settings_image_pos = (0, int(HEIGHT/NUM_IMAGES*0))
@@ -67,7 +47,6 @@ cocktail_shaker_sort_image = pygame.transform.scale(cocktail_shaker_sort_image, 
 cocktail_shaker_sort_image_pos = (0, int(HEIGHT/NUM_IMAGES*4))
 
 
-
 # generates array with predefined size and range
 def generate_rand_array(array_size, range_start, range_end, generation_mode):
     if generation_mode == 'random':
@@ -80,7 +59,7 @@ def generate_rand_array(array_size, range_start, range_end, generation_mode):
             output_array[random.randint(0, array_size-1)] = output_array[random.randint(0, array_size-1)]
         return output_array
 
-# value_max - value_min ≠ 0
+# value_max - value_min != 0
 @jit(nopython=True)
 def convert_ranges(value, value_min, value_max, new_min, new_max):
     return (((value - value_min) * (new_max - new_min)) / (value_max - value_min)) + new_min
@@ -162,9 +141,6 @@ def settings_loop():
 
 
     menu.mainloop(WIN)
-
-# def quick_sort_step():
-#     pass
 
 def selection_sort_step(array, current_index):
     min_value = array[current_index]
